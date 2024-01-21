@@ -1,121 +1,60 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token Minter dApp</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to our Token Minter dApp</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mint">Mint Tokens</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="home">
-            <h2>Introduction to Token Minting</h2>
-            <p>This dApp allows users to mint their own tokens on the blockchain.</p>
-        </article>
-        <section id="mint">
-            <h2>Mint Your Tokens</h2>
-            <form action="#">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email">
-                <label for="token-amount">Token Amount:</label>
-                <input type="number" id="token-amount" placeholder="Token amount">
-                <button type="submit">Mint</button>
-            </form>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn more about our dApp, its purpose, and how it works.</p>
-        </section>
-        <aside>
-            <h3>Learn More:</h3>
-            <p>Explore more about blockchain technology and token minting.</p>
-        </aside>
-    </main>
-    <footer>
-        <p>Contact us at <a href="mailto:hello@dProgrammingUniversity.com">hello@dProgrammingUniversity.com</a></p>
-    </footer>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Token Minter dApp</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <!-- Main heading for the dApp -->
+    <header class="bg-primary text-white text-center py-3">
         <h1>Welcome to our Token Minter dApp</h1>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <!-- Navigation Links -->
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mint">Mint Tokens</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
     </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mint">Mint Tokens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Main Content Section -->
-    <main>
+    <main class="container mt-4">
         <!-- Home Section -->
         <article id="home">
-            <!-- Section Heading -->
             <h2>Introduction to Token Minting</h2>
-            <!-- Description Paragraph -->
             <p>This dApp allows users to mint their own tokens on the blockchain.</p>
-            <!-- Placeholder for background image or color (this comment indicates where a background image or style would be applied if CSS were used) -->
         </article>
-
-            <!-- Mint Section -->
-        <section id="mint">
-            <!-- Section Heading -->
+        <!-- Mint Section -->
+        <section id="mint" class="my-4">
             <h2>Mint Your Tokens</h2>
-            <!-- Token Minting Form -->
             <form action="#">
-                <!-- Email Field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-                <!-- Token Amount Field -->
-                <label for="token-amount">Token Amount:</label>
-                <input type="number" id="token-amount" placeholder="Token amount" min="1" required>
-                <!-- Mint Button -->
-                <button type="submit">Mint</button>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="token-amount">Token Amount:</label>
+                    <input type="number" class="form-control" id="token-amount" placeholder="Token amount" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Mint</button>
             </form>
         </section>
-
         <!-- About Section -->
-        <section id="about">
-            <!-- Section Heading -->
+        <section id="about" class="my-4">
             <h2>About</h2>
-            <!-- About Paragraph -->
             <p>Learn more about our dApp, its purpose, and how it works.</p>
         </section>
-
-        <!-- Learn More Sidebar (this could be styled as a sidebar with CSS) -->
-        <aside>
-            <h3>Learn More:</h3>
-            <p>Explore more about blockchain technology and token minting.</p>
-        </aside>
     </main>
-
-<!-- Footer Section -->
-<footer>
-    <!-- Contact Information -->
-    <p>Contact us at <a href="mailto:hello@dProgrammingUniversity.com">hello@dProgrammingUniversity.com</a></p>
-</footer>
-
+    <!-- Footer Section -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>Contact us at <a href="mailto:hello@dProgrammingUniversity.com" class="text-white">hello@dProgrammingUniversity.com</a></p>
+    </footer>
 </body>
 </html>
